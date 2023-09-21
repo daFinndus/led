@@ -1,3 +1,3 @@
-from device import LED
+import device
 
-led = LED()
+led = device.LED_Device()

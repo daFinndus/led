@@ -1,4 +1,4 @@
-import GPIO
+from RPi import GPIO
 
 
 class LED_Device:
