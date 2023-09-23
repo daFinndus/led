@@ -1,7 +1,7 @@
 from RPi import GPIO
 
 
-class LED_Device:
+class LED:
     def __init__(self, pin):
         GPIO.setmode(GPIO.BOARD)  # Adress pins with their numbers
         GPIO.setup(pin, GPIO.OUT)  # Set pins as output
@@ -31,6 +31,7 @@ class LED_Device:
         GPIO.output(self.pin, False)
 
     # Change all outputs to inputs
-    def clean_up_GPIO(self):
+    @staticmethod
+    def clean_up_gpio():
         GPIO.cleanup()
         print("\nCleaned all pins.\n")
