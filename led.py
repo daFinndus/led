@@ -4,6 +4,7 @@ from RPi import GPIO
 class LED:
     def __init__(self, pin):
         GPIO.setmode(GPIO.BOARD)  # Adress pins with their numbers
+        GPIO.setwarnings(False)  # Mute all these stupid warnings, don't need them anyway
         GPIO.setup(pin, GPIO.OUT)  # Set pins as output
 
         self.pwm_object = GPIO.PWM(pin, 100)  # Initialize object with 100hz
@@ -13,7 +14,7 @@ class LED:
 
         self.pin = pin  # Private object
 
-        print("\nLED-Device setup is complete.")
+        print(f"LED-Device setup for pin {pin} is complete.")
 
     # Set the intensity to a certain value
     def set_intensity(self, value):
