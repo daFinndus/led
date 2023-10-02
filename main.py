@@ -1,9 +1,9 @@
-from rgb import RGB
-from led import LED
-from button import Button
+import os
 from time import sleep
 
-import os
+from button import Button
+from led import LED
+from rgb import RGB
 
 
 # Function to clear all pins and then shutdown
@@ -36,7 +36,7 @@ def execute_task():
                     else:
                         RGB_instance.set_color(color)  # Change the color of the RGB LED
                         sleep(0.5)
-        if Button_instance.hold_button():  # Execute this code, if the button is being helddown for more then 5 seconds
+        if Button_instance.hold_button():  # Execute this code, if the button is being held down for more then 5 seconds
             shutdown_pi(RGB_instance)
         else:
             continue

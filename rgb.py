@@ -10,7 +10,7 @@ class RGB:
         "orange": [255, 130, 0],
         "yellow": [255, 255, 0],
         "green": [0, 255, 0],
-        "turqoise": [10, 175, 160],
+        "turquoise": [10, 175, 160],
         "blue": [0, 0, 255],
     }
 

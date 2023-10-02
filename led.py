@@ -5,7 +5,7 @@ pins = []
 
 class LED:
     def __init__(self, pin):
-        GPIO.setmode(GPIO.BOARD)  # Adress pins with their numbers
+        GPIO.setmode(GPIO.BOARD)  # Address pins with their numbers
         GPIO.setwarnings(False)  # Mute all these stupid warnings, don't need them anyway
         GPIO.setup(pin, GPIO.OUT)  # Set pins as output
 
