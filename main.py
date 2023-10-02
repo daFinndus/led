@@ -42,5 +42,14 @@ def execute_task():
             continue
 
 
+def run_color_show():
+    RGB_instance = RGB()
+
+    while True:
+        for color in RGB_instance.colors:  # Going through all colors we stored in our dictionary
+            RGB_instance.set_color(color)  # Change the color of the RGB LED
+            sleep(1)
+
+
 if __name__ == "__main__":
     execute_task()
