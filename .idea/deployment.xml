@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="dafinndus@192.168.0.31:22 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="dafinndus@192.168.0.60:22 password" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="dafinndus@192.168.0.31:22 password">
+      <paths name="dafinndus@192.168.0.60:22 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/dafinndus/PyScripts/LED" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/dafinndus/PyScripts/LED" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
