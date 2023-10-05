@@ -24,7 +24,8 @@ class LED:
     def set_intensity(self, value):
         if value in range(0, 256):
             self.__intensity = value
-            self.pwm_object.ChangeDutyCycle(100 - (self.__intensity / 255 * 100))  # Set duty cycle as difference to a hundred percent
+            self.pwm_object.ChangeDutyCycle(
+                100 - (self.__intensity / 255 * 100))  # Set duty cycle as difference to a hundred percent
         else:
             self.__intensity = 0
             print("\nWarning: The intensity value is not between 0 and 255.")

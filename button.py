@@ -9,8 +9,8 @@ class Button:
 
         # Create dictionary storaging button pins
         self.buttons = {
-            "Button 1": 13,
-            "Button 2": 11
+            "Button 1": 11,
+            "Button 2": 13
         }
 
         # Change all button pins to inputs

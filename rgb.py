@@ -12,6 +12,7 @@ class RGB:
         "green": [0, 255, 0],
         "turquoise": [10, 175, 160],
         "blue": [0, 0, 255],
+        "white": [255, 255, 255]
     }
 
     # Set gpio board pins to certain channel
